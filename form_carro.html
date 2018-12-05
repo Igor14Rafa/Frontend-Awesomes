@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+  <meta charset="utf-8">
+  <title>Inserir Carro</title>
+</head>
+<body>
+<div class="columns small-4 small-centered">
+    <form action="/addCarro" method="POST">
+      <h3 class="columns small-6 small-centered">Inserir Carro</h3>
+      <hr>
+      <p>
+        <label>Modelo</label>
+        <input type="text" name="modelo" >
+      </p>
+      <p>
+        <label>Cor</label>
+        <input name="cor" type="text">
+      </p>
+      <p>
+        <label>Placa</label>
+        <input type="text" name="placa">
+      </p>
+      <p>
+        <label>Motorista</label>
+        <input type="text" name="motoristas_nome">
+      </p>
+        <input class="button" type="submit" value="Adicionar Carro" />
+      </p>
+    </form>    
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
